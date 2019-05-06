@@ -1,0 +1,11 @@
+taxon 	species
+Species_1_1	Species_1_1
+Species_2_1	Species_2_1
+Species_3_1	Species_3_1
+Species_4_1	Species_4_1
+Species_5_1	Species_5_1
+Species_6_1	Species_6_1
+Species_7_1	Species_7_1
+Species_8_1	Species_8_1
+Species_9_1	Species_9_1
+Species_10_1	Species_10_1

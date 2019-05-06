@@ -1,0 +1,100 @@
+mi = 0
+speciation ~ dnGamma(2,2)
+relativeExtinction ~ dnBeta(1,1)
+extinction := speciation * relativeExtinction
+root ~ dnNormal(mean=8,sd=2.5,min=0.0, max=Inf)
+sampling_fraction <- 10 / 55 
+moves[++mi] = mvSlideBactrian(speciation,tune=true,weight=2)
+moves[++mi] = mvSlideBactrian(relativeExtinction,tune=true,weight=2)
+moves[++mi] = mvScaleBactrian(speciation,lambda=1,tune=true,weight=2)
+moves[++mi] = mvScaleBactrian(relativeExtinction,lambda=1,tune=true,weight=2)
+psi ~ dnBDP(lambda=speciation, mu=extinction, rootAge=root, rho=sampling_fraction, taxa=taxa )
+j=1
+for ( i in 1:num_exon ) {
+    gene_trees[i] <- readTrees("output_GeneTrees/" + exon_names[i] + "_MAP.tree")[1]
+    print("Gene tree "+i+ " has "+ gene_trees[i].ntips() + " tips.")
+}
+recTree <- maximumTree(gene_trees)
+psi.setValue(recTree)
+root.setValue(recTree.rootAge())
+write("\\t\\tProposed starting species tree: ")
+write( psi)
+write("\\t\\tWith root age: " + root)
+AbstractHomologousDiscreteCharacterData
+for (i in 1:n_species) {
+  Ne[i] <- 10.0
+}
+for (i in (n_species+1):n_branches) {
+  Ne[i] ~ dnExponential(0.01)
+  moves[++mi] = mvScale(Ne[i],lambda=.1,tune=true,3.0)
+  moves[++mi] = mvSlide(Ne[i],tune=true,2.0)
+}
+for (i in 1:num_exon) {
+   taxon_map = readTaxonData("data/species_maps/" + exon_names[i] + "_species_map.txt")
+   geneTree[i] ~ dnMultiSpeciesCoalescent(speciesTree=psi, Ne=Ne, taxa=taxon_map)
+   geneTree[i].setValue(gene_trees[i])
+}
+moves[++mi] = mvNarrow(psi, weight=5.0)
+moves[++mi] = mvNNI(psi, weight=1.0)
+moves[++mi] = mvFNPR(psi, weight=3.0)
+moves[++mi] = mvGPR(psi, weight=3.0)
+moves[++mi] = mvSubtreeScale(psi, weight=3.0)
+moves[++mi] = mvNodeTimeSlideUniform(psi, weight=5.0)
+move_species_narrow_exchange = mvSpeciesNarrow( speciesTree=psi, weight=20 )
+move_species_subtree_scale_beta = mvSpeciesSubtreeScaleBeta(psi, weight=5)
+move_species_subtree_scale = mvSpeciesSubtreeScale(psi, weight=5)
+for (i in 1:num_exon) {
+    
+    moves[++mi] = mvNNI(geneTree[i], 5.0)
+    moves[++mi] = mvNarrow(geneTree[i], 5.0)
+    moves[++mi] = mvFNPR(geneTree[i], 3.0)
+    moves[++mi] = mvGPR(geneTree[i], 2.0)
+    moves[++mi] = mvSubtreeScale(geneTree[i], 5.0)
+    moves[++mi] = mvTreeScale(geneTree[i], 1.0, true, 3.0)
+    moves[++mi] = mvNodeTimeSlideUniform(geneTree[i], 20.0)
+    
+   
+    
+    move_species_narrow_exchange.addGeneTreeVariable( geneTree[i] )
+    move_species_subtree_scale_beta.addGeneTreeVariable( geneTree[i] )
+    move_species_subtree_scale.addGeneTreeVariable( geneTree[i] )
+}
+moves[++mi] = move_species_narrow_exchange
+moves[++mi] = move_species_subtree_scale_beta
+moves[++mi] = move_species_subtree_scale
+for ( i in 1:num_exon ) {
+   clock_rate[i] ~ dnExponential(1.0)
+   moves[++mi] = mvScale(clock_rate[i], weight=2.0)
+   moves[++mi] = mvSlide(clock_rate[i], weight=3.0)
+}
+for ( i in 1:num_exon ) {
+    
+    kappa[i] ~ dnLognormal(0,1)
+    moves[++mi] = mvScale(kappa[i],weight=1.0)
+    moves[++mi] = mvSlide(kappa[i], weight=1.0)
+    
+    pi_prior[i] <- v(1,1,1,1)
+    pi[i] ~ dnDirichlet(pi_prior[i])
+    moves[++mi] = mvSimplexElementScale(pi[i],weight=2.0)
+    
+    Q[i] := fnHKY(kappa[i],pi[i])
+}
+for ( i in 1:num_exon ) {
+    
+    seq[i] ~ dnPhyloCTMC(tree=geneTree[i], Q=Q[i], branchRates=clock_rate[i], type="DNA")
+    seq[i].clamp(data[i])
+}
+mymodel = model(psi)
+output_folder = "output_MSC/"
+monitors[1] = mnScreen(printgen=20)
+monitors[2] = mnModel(filename=output_folder+"posterior_MSC_centro.log",printgen=10, separator = TAB)
+monitors[3] = mnFile(filename=output_folder+"posterior_MSC_centro.trees",printgen=10, separator = TAB, psi)
+for ( i in 1:num_exon ) {
+    monitors[i+3] = mnFile(filename=output_folder+"geneTrees/posterior_" +exon_names[i] + ".trees",printgen=10, separator = TAB, geneTree[i])
+}
+mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
+mymcmc.run(generations=3000, tuningInterval=200)
+mymcmc.operatorSummary()
+treetrace = readTreeTrace(output_folder+"posterior_MSC_centro.trees", treetype="clock")
+treetrace.summarize()
+mapTree(treetrace,output_folder+"posterior_MSC_centro_MAP.tree")

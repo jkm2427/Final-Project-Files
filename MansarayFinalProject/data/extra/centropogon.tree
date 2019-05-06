@@ -1,0 +1,253 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=151;
+	taxlabels
+	Burmeistera_almedae_2016_001
+	Burmeistera_anderssonii_2016_113
+	Burmeistera_arbusculifera_2016_097
+	Burmeistera_asclepiadea_2016_088
+	Burmeistera_aspera_2016_089
+	Burmeistera_auriculata_2016_199
+	Burmeistera_ball_2016_165
+	Burmeistera_borjensis_2016_219
+	Burmeistera_brachyandra_2016_114
+	Burmeistera_breviflora_2016_092
+	Burmeistera_brighamioides_2016_121
+	Burmeistera_bullatifolia_2016_129
+	Burmeistera_ceratocarpa_2016_233
+	Burmeistera_cf_aeribacca_2016_087
+	Burmeistera_chiriquiensis_2016_161
+	Burmeistera_club_2016_124
+	Burmeistera_cone_2016_125
+	Burmeistera_corei_2016_093
+	Burmeistera_crassifolia_2016_200
+	Burmeistera_crispiloba_2016_201
+	Burmeistera_curly_2016_123
+	Burmeistera_curviandra_2016_094
+	Burmeistera_cyclostigmata_2016_104
+	Burmeistera_cyclostigmata_2016_211
+	Burmeistera_cyclostigmata_2016_217
+	Burmeistera_cylindrocarpa_2016_235
+	Burmeistera_darienensis_2016_149
+	Burmeistera_domingensis_2016_192
+	Burmeistera_draconis_2016_133
+	Burmeistera_dukei_2016_153
+	Burmeistera_flava_sp_nova_2016_111
+	Burmeistera_fuscoapicata_2016_128
+	Burmeistera_glabrata_2016_227
+	Burmeistera_hojota_2016_127
+	Burmeistera_holm_nielsenii_2016_210
+	Burmeistera_huacamayensis_2016_115
+	Burmeistera_litensis_2016_214
+	Burmeistera_loejtnantii_2016_006
+	Burmeistera_lutosa_2016_209
+	Burmeistera_mcvaughii_2016_155
+	Burmeistera_multiflora_2016_196
+	Burmeistera_obtusifolia_2016_108
+	Burmeistera_olive_2016_126
+	Burmeistera_oyacachensis_2016_230
+	Burmeistera_pallida_2016_008
+	Burmeistera_pallida_ramosa_succulenta_2016_112
+	Burmeistera_panamensis_2016_151
+	Burmeistera_parviflora_LL_20
+	Burmeistera_pirrensis_2016_148
+	Burmeistera_purple_2016_167
+	Burmeistera_quercifolia_2016_009
+	Burmeistera_ramosa_2016_007
+	Burmeistera_refracta_2016_195
+	Burmeistera_resupinata_2016_240
+	Burmeistera_resupinata_var_heilbornii_2016_116
+	Burmeistera_reventador_2016_138
+	Burmeistera_rubrosepala_2016_239
+	Burmeistera_ruby_2016_186
+	Burmeistera_smaragdi_2016_236
+	Burmeistera_smooth_2016_135
+	Burmeistera_sodiroana_2016_197
+	Burmeistera_sp_nova_Cascada_Hollin_2016_117
+	Burmeistera_sp_nova_Sierrazul_2016_118
+	Burmeistera_succulenta_2016_143
+	Burmeistera_succulenta_2016_188
+	Burmeistera_succulenta_E_2016_229
+	Burmeistera_tenuiflora_2016_158
+	Burmeistera_truncata_2016_144
+	Burmeistera_utleyi_2016_156
+	Burmeistera_vulgaris_2016_100
+	Burmeistera_winged_2016_163
+	Burmeistera_xerampelina_2016_086
+	Burmeistera_zurquiensis_2016_098
+	L371_S_planchonis
+	LL101_S_werdermannii
+	LL102_S_siberiensis
+	LL104_Lysipomia
+	LL122_S_lycioides
+	LL155_S_mattiaei
+	LL159_S_jelskii
+	LL161_C_granulosus_Peru
+	LL165_C_macbridei
+	LL167_S_virgatus
+	LL168_C_pulcher
+	LL171_C_urubambae
+	LL173_S_obovatus
+	LL180_C_viriduliflora
+	LL187_S_rusbyanus
+	LL189_S_antonellii
+	LL194_C_perlongus
+	LL195_C_dianae
+	LL21_C_congestus
+	LL244_C_vargasii
+	LL248_C_simulans
+	LL269_S_imbricatus
+	LL26_C_solanifolius
+	LL28_C_cornutus
+	LL312_C_alectrolophos
+	LL324_C_baezanus
+	LL325_C_costaricae
+	LL327_C_cordifolius
+	LL328_S_giganteus
+	LL329_S_nematosepalus
+	LL330_S_smilax
+	LL332_S_umbellatus
+	LL333_S_asplundii
+	LL334_S_aureus
+	LL335_S_sulfureus
+	LL336_S_sceptrum
+	LL337_S_nobilis
+	LL339_S_plegmatocaulis
+	LL341_S_vatkeanus
+	LL348_S_odontosepalus
+	LL349_C_tessmannii
+	LL350_L_tupa
+	LL351_S_affinis
+	LL352_S_actinothrix
+	LL355_S_chloroleucus
+	LL357_S_correoides
+	LL358_S_fiebrigii
+	LL359_S_foliosus
+	LL35_C_palmanus
+	LL360_S_fulgens
+	LL361_S_furax
+	LL363_S_krauseanus
+	LL365_S_longipedunculatus
+	LL366_S_longibracteolatus
+	LL367_S_macropodus
+	LL368_S_manntiaeflorus
+	LL373_S_sangineus
+	LL375_S_scandens
+	LL378_S_verticillatus
+	LL37_C_erythraeus
+	LL47_C_grandidentatus
+	LL49_C_incanus
+	LL61_C_asclepideus
+	LL69_C_nigricans
+	LL6_C_smithii
+	LL83_C_brittonianus
+	LL85_C_incanus
+	LL86_C_mandonis
+	LL87_C_incanus_pink
+	LL88_S_ayersiae
+	LL90_S_boliviensis
+	LL91_S_corymbifer
+	LL93_S_orbignianus
+	LL94_S_andinus
+	LL97_S_tunarensis
+	LL98_S_tunicatus
+	LL99_S_brevicalyx
+	LL99_S_tupaeformis
+;
+end;
+
+begin trees;
+	tree PAUP_1 = [&U] (Burmeistera_almedae_2016_001,(((Burmeistera_aspera_2016_089,Burmeistera_loejtnantii_2016_006)[&bs=99],((((((((((((((((Burmeistera_ball_2016_165,Burmeistera_club_2016_124)[&bs=52],Burmeistera_cone_2016_125)[&bs=69],Burmeistera_cf_aeribacca_2016_087)[&bs=93],Burmeistera_smooth_2016_135)[&bs=47],(Burmeistera_quercifolia_2016_009,(Burmeistera_rubrosepala_2016_239,(Burmeistera_truncata_2016_144,Burmeistera_auriculata_2016_199)[&bs=36])[&bs=43])[&bs=100])[&bs=64],((((((Burmeistera_borjensis_2016_219,Burmeistera_oyacachensis_2016_230)[&bs=82],(Burmeistera_draconis_2016_133,(Burmeistera_sp_nova_Sierrazul_2016_118,Burmeistera_vulgaris_2016_100)[&bs=75])[&bs=65])[&bs=41],Burmeistera_reventador_2016_138)[&bs=16],(Burmeistera_ramosa_2016_007,(Burmeistera_refracta_2016_195,Burmeistera_sp_nova_Cascada_Hollin_2016_117)[&bs=50])[&bs=90])[&bs=26],Burmeistera_glabrata_2016_227)[&bs=33],Burmeistera_pallida_2016_008)[&bs=90])[&bs=52],Burmeistera_curviandra_2016_094)[&bs=84],(((((Burmeistera_cyclostigmata_2016_104,Burmeistera_darienensis_2016_149)[&bs=100],(Burmeistera_dukei_2016_153,Burmeistera_winged_2016_163)[&bs=99])[&bs=77],((Burmeistera_cyclostigmata_2016_211,Burmeistera_cyclostigmata_2016_217)[&bs=100],Burmeistera_multiflora_2016_196)[&bs=40])[&bs=38],(Burmeistera_domingensis_2016_192,(Burmeistera_litensis_2016_214,Burmeistera_brachyandra_2016_114)[&bs=93])[&bs=92])[&bs=58],Burmeistera_holm_nielsenii_2016_210)[&bs=88])[&bs=48],(((Burmeistera_mcvaughii_2016_155,Burmeistera_utleyi_2016_156)[&bs=90],(Burmeistera_parviflora_LL_20,Burmeistera_flava_sp_nova_2016_111)[&bs=91])[&bs=88],Burmeistera_pirrensis_2016_148)[&bs=70])[&bs=26],(((Burmeistera_brighamioides_2016_121,(Burmeistera_bullatifolia_2016_129,(((Burmeistera_curly_2016_123,Burmeistera_olive_2016_126)[&bs=100],Burmeistera_panamensis_2016_151)[&bs=57],(Burmeistera_hojota_2016_127,Burmeistera_purple_2016_167)[&bs=100])[&bs=97])[&bs=97])[&bs=90],(((Burmeistera_ceratocarpa_2016_233,Burmeistera_anderssonii_2016_113)[&bs=100],Burmeistera_fuscoapicata_2016_128)[&bs=100],Burmeistera_lutosa_2016_209)[&bs=98])[&bs=27],(Burmeistera_xerampelina_2016_086,((((((((((((((L371_S_planchonis,LL366_S_longibracteolatus)[&bs=62],((LL325_C_costaricae,LL35_C_palmanus)[&bs=100],LL327_C_cordifolius)[&bs=98])[&bs=89],LL348_S_odontosepalus)[&bs=92],(((((((((((LL101_S_werdermannii,LL363_S_krauseanus)[&bs=63],((LL334_S_aureus,LL358_S_fiebrigii)[&bs=100],LL367_S_macropodus)[&bs=94])[&bs=68],LL173_S_obovatus)[&bs=94],LL167_S_virgatus)[&bs=92],LL99_S_tupaeformis)[&bs=44],LL359_S_foliosus)[&bs=51],((((((((LL161_C_granulosus_Peru,LL168_C_pulcher)[&bs=57],LL171_C_urubambae)[&bs=40],LL244_C_vargasii)[&bs=100],(LL26_C_solanifolius,LL324_C_baezanus)[&bs=100])[&bs=100],LL21_C_congestus)[&bs=100],LL28_C_cornutus)[&bs=100],LL312_C_alectrolophos)[&bs=56,!hilight={9,0.0,#55802b}],((((LL189_S_antonellii,(LL341_S_vatkeanus,LL352_S_actinothrix)[&bs=93])[&bs=100],((LL357_S_correoides,LL88_S_ayersiae)[&bs=100],LL355_S_chloroleucus)[&bs=100])[&bs=68],LL333_S_asplundii)[&bs=40],(LL375_S_scandens,LL337_S_nobilis)[&bs=80])[&bs=28])[&bs=32])[&bs=55],((LL351_S_affinis,LL361_S_furax)[&bs=99],LL99_S_brevicalyx)[&bs=94])[&bs=25],(((LL104_Lysipomia,(LL350_L_tupa,LL368_S_manntiaeflorus)[&bs=48])[&bs=48],LL336_S_sceptrum)[&bs=26],LL349_C_tessmannii)[&bs=21])[&bs=9],(((((LL122_S_lycioides,LL378_S_verticillatus)[&bs=100],LL365_S_longipedunculatus)[&bs=90],LL360_S_fulgens)[&bs=100],((LL187_S_rusbyanus,LL94_S_andinus)[&bs=74],(LL269_S_imbricatus,LL93_S_orbignianus)[&bs=100])[&bs=100])[&bs=99],LL91_S_corymbifer)[&bs=69])[&bs=15],LL330_S_smilax)[&bs=27])[&bs=35],LL97_S_tunarensis)[&bs=33],(((((((LL180_C_viriduliflora,(LL194_C_perlongus,(LL195_C_dianae,LL248_C_simulans)[&bs=97])[&bs=100])[&bs=50],(LL85_C_incanus,LL87_C_incanus_pink)[&bs=100])[&bs=26],LL86_C_mandonis)[&bs=38],LL49_C_incanus)[&bs=83],LL83_C_brittonianus)[&bs=98],(LL332_S_umbellatus,(LL98_S_tunicatus,LL102_S_siberiensis)[&bs=95])[&bs=95])[&bs=68],LL90_S_boliviensis)[&bs=50])[&bs=28],Burmeistera_breviflora_2016_092)[&bs=11],LL335_S_sulfureus,LL339_S_plegmatocaulis)[&bs=7],Burmeistera_corei_2016_093)[&bs=20],(LL373_S_sangineus,LL329_S_nematosepalus)[&bs=20])[&bs=7],((LL155_S_mattiaei,LL159_S_jelskii)[&bs=15],LL328_S_giganteus)[&bs=2])[&bs=7],(LL165_C_macbridei,((LL37_C_erythraeus,LL61_C_asclepideus)[&bs=95],LL47_C_grandidentatus)[&bs=82])[&bs=94])[&bs=21],(LL69_C_nigricans,LL6_C_smithii)[&bs=96])[&bs=23],Burmeistera_asclepiadea_2016_088)[&bs=22])[&bs=21])[&bs=23])[&bs=91],(Burmeistera_chiriquiensis_2016_161,Burmeistera_crassifolia_2016_200)[&bs=96])[&bs=48],(((Burmeistera_crispiloba_2016_201,Burmeistera_sodiroana_2016_197)[&bs=43],Burmeistera_succulenta_2016_188)[&bs=97],(Burmeistera_resupinata_2016_240,Burmeistera_resupinata_var_heilbornii_2016_116)[&bs=100])[&bs=51])[&bs=92],Burmeistera_ruby_2016_186)[&bs=97],(Burmeistera_cylindrocarpa_2016_235,(((Burmeistera_huacamayensis_2016_115,Burmeistera_succulenta_E_2016_229)[&bs=59],Burmeistera_pallida_ramosa_succulenta_2016_112)[&bs=99],Burmeistera_succulenta_2016_143)[&bs=80])[&bs=99])[&bs=41],(Burmeistera_smaragdi_2016_236,Burmeistera_tenuiflora_2016_158)[&bs=100])[&bs=85],Burmeistera_arbusculifera_2016_097)[&bs=82])[&bs=99],Burmeistera_zurquiensis_2016_098)[&bs=87],Burmeistera_obtusifolia_2016_108)[&bs=100];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=true;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bs";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=true;
+	set trees.transformType="cladogram";
+end;
+

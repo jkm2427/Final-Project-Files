@@ -1,0 +1,20 @@
+#NEXUS
+
+BEGIN DATA;
+DIMENSIONS  NTAX=10 NCHAR=298;
+FORMAT DATATYPE=DNA GAP=- MISSING=?;
+MATRIX
+
+Species_1_1			            aaattattgtaccttttcaaacccgcaccgttagagagagaaattcaacagagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggtcctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_2_1                     aaattattgtacgttttcaaacccgcaccgttagggagagaaattcaaaacagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggccctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_3_1                     aaattattgtaccttttcaaacccgcaccgttagagagagaaattcaacagagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggtcctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_4_1                     aaattattgtaccttttcaaacccgcaccgttagggagagaaattcaaaacagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgctgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtccccaccttccaccgccatgtccccaccttccaccgccgtcgtctacgaccaacacggtcctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgt--
+Species_5_1                     aaattattgtaccctttcaaacccgcaccgtta--gagagaaattcaaaacagagtcaatggcgaacttgaagcttgccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggccctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_6_1                     aaattattgtaccttttcaaacccgcaccgttagggagagaaattcaaaacagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggccctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_7_1                     aaattattgtaccttttcaaacccgcaccgtta-ggagagagattcaaaacagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttcgaccgccgtcgtctacgaccaacacggccctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_8_1                     agattattgtaccttttcaaacccgcaccgttagggagagaaattcaaaacagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggccctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_9_1                     aaattattgtaccttttcaaacccgcaccgttagggagagaaattcaaaacagagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacatcatacactcacagtaagagctttctccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggccctcccgattccgtcacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+Species_10_1                    agattattgtaccttttcaaacccgcaccgttagggggagaaattca----agagtcaatggcgaacttgaagctggccatcgtaagatccatccatggaacatcggcgctgtcccaactcctccgccgcagacctcatacactcacagtaagagctttgtccgccgtcgccatgtcccca---------------------ccttccaccgccgtcgtctacgaccaacacggccctcccgattcggttacaaagttcgcttctatccttttctgttttactagtacatgaatgttt
+;
+
+END;
